@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Konto
+comment0.text=\r\n\ In\ der\ Klasse\ Konto\ wird\ ein\ Konto,\ mit\ einer\ vom\ Kunden\ eingegebenen\ Kontonummer,\r\n\ erstellt.\ Desweiteren\ kann\ man\ Geld\ auf\ das\ Konto\ drauf\ zahlen\ und\ abheben.\r\n\r\n\ @author\ Jonathan\ Backes\r\n\ @version\ 0.1\r\n
+comment1.params=kontonummer\ dispo
+comment1.target=Konto(int,\ int)
+comment1.text=\r\n\ Der\ Konstruktor\ der\ Klasse\ setzt\ das\ Startsaldo\ sowie\ die\ Kontonummer\r\n\ und\ das\ Dispo.\ Eine\ negative\ eingabe\ des\ Dispos\ ist\ nicht\ m\u00F6glich.\r\n\ @param\ kein\ negativer\ Dispo\r\n\ @param\ alles\ Ganzzahlig\r\n
+comment2.params=einzahlung
+comment2.target=void\ einzahlen(int)
+comment2.text=\r\n\ Die\ Einzahlung\ wird\ dem\ Saldo\ hinzugef\u00FCgt\r\n\r\n\ @param\ ganzzahlige\ Einzahlung\r\n
+comment3.params=auszahlung
+comment3.target=void\ abheben(int)
+comment3.text=\r\n\ Hier\ wird\ der\ abzuhebene\ Betrag\ vom\ Saldo\ abgezogen\ und\ kontroliert\ ob\r\n\ der\ Dispo\ \u00FCberschritten\ wird\r\n
+comment4.params=neuDispo
+comment4.target=void\ dispoAendern(int)
+comment4.text=\r\n\ Mit\ dieser\ Methode\ kann\ der\ Dispo\ ge\u00E4ndert\ werden\r\n\ Dabei\ achtet\ die\ Methode\ darauf\ das\ der\ neue\ Dispo\ nicht\ kleiner\ ist\r\n\ als\ der\ Betrag\ des\ geliehenen\ Geldes\r\n\ Diese\ Methode\ wird\ nach\ dem\ ausf\u00FChren\ jeder\ anderen\ Methode\ aufgerufen\r\n\ um\ den\ \u00DCberblick\ \u00FCber\ sein\ Konto\ zu\ bewahren.\r\n\r\n\ @param\ kein\ negativer\ Dispo\ (ganzzahlig)\r\n
+comment5.params=
+comment5.target=void\ status()
+comment5.text=\r\n\ diese\ Methode\ gibt\ den\ Status\ des\ Kontos\ zur\u00FCck\r\n\ Kontonummer,\ Kontostand,\ Dispo,\ verf\u00FCgbarer\ Dispo\r\n
+numComments=6

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Ratemaschiene
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Ratemaschiene.\r\n\r\n\ @author\ (Ihr\ Name)\r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment1.params=
+comment1.target=Ratemaschiene()
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Ratemaschiene\r\n\ Hier\ wird\ de\ zu\ ratene\ Zahl\ generiert\r\n
+comment2.params=vergleichswert
+comment2.target=void\ istEsDieseZahl(int)
+comment2.text=\r\n\ In\ dieser\ Methode\ wird\ verglchen\ ob\ man\ die\ richtige\ Zahl\ erraten\ hat\r\n\ und\ wie\ viel\ Versuche\ man\ ben\u00F6tigt\ hat.\r\n\ @param\ \ der\ Ratewert\r\n
+numComments=3

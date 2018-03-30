@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Waage
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Waage.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment1.params=gewicht
+comment1.target=Waage(int)
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Waage\r\n\ @param\ Gewicht\ ganzzahligem\ in\ kg\ angeben\r\n
+comment2.params=neuesGewicht
+comment2.target=void\ regestriere(int)
+comment2.text=\r\n\ Hier\ werden\ die\ gemessenen\ Gewichte\ regestriert\ und\ verwertet\r\n\ minimum\ und\ maximum\ ermitelt\r\n\ durchschnitt\ berechnet\r\n\ \r\n\ @param\ \ neues\ Gewicht\ in\ kg\ (ganzzahlig)\r\n
+comment3.params=
+comment3.target=int\ gibTrend()
+comment3.text=\r\n\ In\ dieser\ Methode\ wird\ der\ Trend\ berechnet\r\n\ @return\ 1\ wenn\ das\ Gewicht\ rauf\ geht\r\n\ @return\ -1\ wenn\ das\ Gewicht\ runter\ geht\r\n\ @return\ 0\ wenn\ das\ Gewicht\ gleich\ bleibt\r\n
+comment4.params=
+comment4.target=int\ gibMinimalgewicht()
+comment5.params=
+comment5.target=int\ gibMaximalgewicht()
+comment6.params=
+comment6.target=double\ gibDurchschnittsgewicht()
+numComments=7
