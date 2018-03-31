@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Gui
+comment1.params=
+comment1.target=void\ gui()
+comment2.params=
+comment2.target=void\ quiz()
+comment3.params=counter\ einsatz
+comment3.target=void\ geldErhoen(int,\ int)
+numComments=4

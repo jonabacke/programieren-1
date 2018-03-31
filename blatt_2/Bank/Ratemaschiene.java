@@ -26,25 +26,25 @@ public class Ratemaschiene
      * und wie viel Versuche man benötigt hat.
      * @param  der Ratewert
      */
-    public void istEsDieseZahl(int vergleichswert)
+    public boolean istEsDieseZahl(int vergleichswert)
     {
         if(vergleichswert == randomNumber){
             switch(counter)
             {
                 case 1:
-                    System.out.println("Das war doch nur Glück! " + counter);
+                    System.out.println("Das war doch nur Glueck! " + counter);
                     break;
                 case 2:
-                    System.out.println("Das war doch nur Glück! " + counter);
+                    System.out.println("Das war doch nur Glueck! " + counter);
                     break;
                 case 3:
-                    System.out.println("Das war doch nur Glück! " + counter);
+                    System.out.println("Das war doch nur Glueck! " + counter);
                     break;
                 case 4:
-                    System.out.println("Das war doch nur Glück! " + counter);
+                    System.out.println("Das war doch nur Glueck! " + counter);
                     break;
                 case 5:
-                    System.out.println("Das war doch nur Glück! " + counter);
+                    System.out.println("Das war doch nur Glueck! " + counter);
                     break;
                 case 6:
                     System.out.println("Gar nicht mal so gut! " + counter);
@@ -64,12 +64,14 @@ public class Ratemaschiene
                 default:
                     System.out.println("Such dir besser ein anderes Hobby! " + counter);
             }
-            System.out.println("Stimmt " + counter + " Versuche " + vergleichswert);
+            System.out.println("Stimmt " + counter + " Versuche ");
+            return true;
         }else if(vergleichswert < randomNumber){
-            System.out.println("„Zu niedrig geraten! " + vergleichswert);
+            System.out.println("Zu niedrig geraten! ");
         }else{
-            System.out.println("Zu hoch getippt! " + vergleichswert);
+            System.out.println("Zu hoch getippt! ");
         }
         counter ++;
+        return false;
     }
 }
