@@ -1,12 +1,20 @@
+
+// Hier wird das Scanner Paket eingefügt
 import java.util.Scanner;
 
-
+/** In der GUI Klasse kann der Benutzer ein Konto eröffnen mit einem selbst
+  * geregelten Salso. Weiterhin kann er Geld auf sein Konto einzahlen und
+  * abheben. Außerdem kann er noch sein Dispo vergrößern oder verkleinern
+  * und bei einem Ratespiel mitmachen. Bei deisem Ratespiel kann er sein Geld
+  * vom Konto setzen und es, je nach dem wie gut er ist, vervielfachen.
+  **/
 public class Gui{
 
   Konto konto;
 
 
-
+// Mit der gui Methode kann der Benutzer auf sein Konto zugreifen und sich
+// entsdcheiden ob er bei dem Ratespiel teilnehmen will.
 
   public void gui(){
     int Kontrolle = 0;
@@ -20,6 +28,9 @@ public class Gui{
     System.out.println("Bitte geben Sie ihren gewuenschnten Dispo ein.");
     int dispo = scan.nextInt();
     konto = new Konto(kontonummer, dispo);
+
+// Durch diese Schleife kann der benutzer mehrere Sachen mit seinem Konto machen
+// bis er eine Zahl größer 5 eingibt denn dann wird das Programm beendet.
 
     while(Kontrolle != 1){
     System.out.println("--------------------------------------------------------");
@@ -57,7 +68,7 @@ public class Gui{
       }
     }
 
-
+// über die Quiz Methode leuft das Quiz ab
   }
   public void quiz(){
     Scanner scan = new Scanner(System.in);
@@ -72,6 +83,7 @@ public class Gui{
       System.out.println("--------------------------------------------------------");
       System.out.println("Wie viel Geld wollen Sie setzen");
       int einsatz = scan.nextInt();
+      konto.abheben(einsatz);
       System.out.println("--------------------------------------------------------");
       System.out.println("Geben Sie ihren ersten Tipp ab");
       Ratemaschiene rate = new Ratemaschiene();
@@ -104,7 +116,7 @@ public class Gui{
       geldErhoen(counter, einsatz);
     }
   }
-
+// In dieser Methode wird geregelt wie viel Geld auf das Konto des Gewinnners kommt
   public void geldErhoen(int counter, int einsatz){
     int gewinn;
   //  main main = new main("");

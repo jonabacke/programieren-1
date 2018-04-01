@@ -10,7 +10,7 @@
 
 public class Konto
 {
-    // Hier werden die FEldvariablen deklariert
+    // Hier werden die Feldvariablen deklariert
     private int _saldo;
     private int _kontonummer;
     private int _dispo;
