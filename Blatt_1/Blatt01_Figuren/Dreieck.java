@@ -6,7 +6,8 @@ import javafx.scene.shape.Polygon;
  * 
  * Nach einer Vorlage von Michael Koelling und David J. Barnes
  * 
- * @author Axel Schmolitzky
+ * @author Axel Schmolitzky 
+ * @author Jonathan / Linus
  * @version 2017
  */
 class Dreieck
