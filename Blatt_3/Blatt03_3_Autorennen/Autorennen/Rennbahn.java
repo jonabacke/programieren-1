@@ -10,7 +10,7 @@ class Rennbahn{
   int _rennZeit;
 
   public Rennbahn(){
-    _streckenlänge = 100000;
+    _streckenlänge = 10000000;
   }
 
 
@@ -34,16 +34,34 @@ class Rennbahn{
 
   public void simuliereZeitabschnitt(int anfangZeit, int endZeit){
     if (_auto1 != null) {
-      _auto1.fahre(anfangZeit, endZeit);
+      fahre(_auto1, anfangZeit, endZeit);
     }
     if (_auto2 != null) {
-      _auto2.fahre(anfangZeit, endZeit);
+      fahre(_auto2, anfangZeit, endZeit);
     }
     if (_auto3 != null) {
-      _auto3.fahre(anfangZeit, endZeit);
+      fahre(_auto3, anfangZeit, endZeit);
     }
     if (_auto4 != null) {
-      _auto4.fahre(anfangZeit, endZeit);
+      fahre(_auto4, anfangZeit, endZeit);
+    }
+  }
+
+  public void fahre(Rennauto auto, int anfangZeit, int endZeit){
+    if (auto.gibGefahreneStrecke() % _streckenlänge < 1500000) {
+      auto.fahreGerade(anfangZeit, endZeit);
+    }
+    else if (auto.gibGefahreneStrecke() % _streckenlänge < 3500000) {
+      auto.fahreKurve(anfangZeit, endZeit);
+    }
+    else if (auto.gibGefahreneStrecke() % _streckenlänge < 6500000) {
+      auto.fahreGerade(anfangZeit, endZeit);
+    }
+    else if (auto.gibGefahreneStrecke() % _streckenlänge < 8500000) {
+      auto.fahreKurve(anfangZeit, endZeit);
+    }
+    else if (auto.gibGefahreneStrecke() % _streckenlänge < 10000000) {
+      auto.fahreGerade(anfangZeit, endZeit);
     }
   }
 
