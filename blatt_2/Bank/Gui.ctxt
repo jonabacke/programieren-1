@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=Gui
+comment0.text=\ In\ der\ GUI\ Klasse\ kann\ der\ Benutzer\ ein\ Konto\ er\u00F6ffnen\ mit\ einem\ selbst\r\n\ geregelten\ Salso.\ Weiterhin\ kann\ er\ Geld\ auf\ sein\ Konto\ einzahlen\ und\r\n\ abheben.\ Au\u00DFerdem\ kann\ er\ noch\ sein\ Dispo\ vergr\u00F6\u00DFern\ oder\ verkleinern\r\n\ und\ bei\ einem\ Ratespiel\ mitmachen.\ Bei\ deisem\ Ratespiel\ kann\ er\ sein\ Geld\r\n\ vom\ Konto\ setzen\ und\ es,\ je\ nach\ dem\ wie\ gut\ er\ ist,\ vervielfachen.\r\n
 comment1.params=
 comment1.target=void\ gui()
 comment2.params=

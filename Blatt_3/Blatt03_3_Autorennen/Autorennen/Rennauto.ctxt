@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Rennauto
+comment1.params=name\ fahrzeugTyp\ maxV
+comment1.target=Rennauto(java.lang.String,\ java.lang.String,\ double)
+comment2.params=
+comment2.target=Rennauto()
+comment3.params=zeit
+comment3.target=void\ fahre(int)
+comment4.params=faktor1\ faktor2\ laufvariable
+comment4.target=double\ gompertzFunktion(double,\ int,\ int)
+numComments=5
