@@ -1,11 +1,17 @@
 class Rennbahn{
-  double _streckenlänge = 100;
+
+  //Streckenlänge in mm für höhere Genauigkeit
+  int _streckenlänge;
   Rennauto _auto1;
   Rennauto _auto2;
   Rennauto _auto3;
   Rennauto _auto4;
   Rennauto _sieger;
   int _rennZeit;
+
+  public Rennbahn(){
+    _streckenlänge = 100000;
+  }
 
 
   public void setzeAufSpur(Rennauto auto){
@@ -41,32 +47,32 @@ class Rennbahn{
     }
   }
 
-  public Rennauto liefereSieger(){
+  public boolean liefereSieger(){
     if (_auto1 != null) {
       if(_streckenlänge-_auto1.gibStrecke() >= 0){
         _sieger = _auto1;
-        return _auto1;
+        return true;
       }
     }
-    if (_auto2 != null) {
+    else if (_auto2 != null) {
       if(_streckenlänge-_auto2.gibStrecke() >= 0){
         _sieger = _auto2;
-        return _auto2;
+        return true;
       }
     }
-    if (_auto3 != null) {
+    else if (_auto3 != null) {
       if(_streckenlänge-_auto3.gibStrecke() >= 0){
         _sieger = _auto3;
-        return _auto3;
+        return true;
       }
     }
-    if (_auto4 != null) {
+    else if (_auto4 != null) {
       if(_streckenlänge-_auto4.gibStrecke() >= 0){
         _sieger = _auto4;
-        return _auto4;
+        return true;
       }
     }
-    return null;
+    return false;
   }
 
   public void rennenDurchführen(){
@@ -75,27 +81,51 @@ class Rennbahn{
         System.out.println("Kein Auto vorhanden");
     }
 
+    if (_auto4 != null) {
+      System.out.printf("|%10s||%10s||%10s||%10s|" ,_auto1.gibName(), _auto2.gibName(), _auto3.gibName(), _auto4.gibName());
+    }
+    else if (_auto3 != null) {
+      System.out.printf("|%10s||%10s||%10s|" ,_auto1.gibName(), _auto2.gibName(), _auto3.gibName());
+    }
+
+    else if (_auto2 != null) {
+      System.out.printf("|%10s||%10s|" ,_auto1.gibName(), _auto2.gibName());
+    }
+    else{
+      System.out.printf("|%10s|" ,_auto1.gibName());
+    }
+    System.out.println();
+    System.out.println("------------------------------------------------------");
+
     int zeit = 1;
+
 
     do{
 
       simuliereZeitabschnitt(zeit, zeit + 1);
+      System.out.println();
       zeit++;
     }
-    while(liefereSieger() != null);
+    while(liefereSieger());
 
     System.out.println(_sieger.gibName()+" ist Gewinner");
   }
 
   public void entfernen(Rennauto auto){
     if (_auto1 == auto) {
-      _auto1 = null;
+      _auto1 = _auto2;
+      _auto2 = _auto3;
+      _auto3 = _auto4;
+      _auto4 = null;
     }
     else if (_auto2 == auto) {
-      _auto2 = null;
+      _auto2 = _auto3;
+      _auto3 = _auto4;
+      _auto4 = null;;
     }
     else if (_auto3 == auto) {
-      _auto3 = null;
+      _auto3 = _auto4;
+      _auto4 = null;;
     }
     else if (_auto4 == auto) {
       _auto4 = null;

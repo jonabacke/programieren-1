@@ -2,33 +2,37 @@ class Rennauto{
 
   String _name;
   String _fahrzeugTyp;
-  double _maxV;
-  double _meterZaehler;
+  //@param _maxV in mm/s
+  int _maxV;
+  int _millimeterZaehler;
 
-  public Rennauto(String name, String fahrzeugTyp, double maxV)
+  public Rennauto(String name, String fahrzeugTyp, int maxV)
   {
     _name = name;
     _fahrzeugTyp = fahrzeugTyp;
     _maxV = maxV;
-    _meterZaehler = 0;
+    _millimeterZaehler = 0;
   }
 
   public Rennauto()
   {
     _name = "berta";
     _fahrzeugTyp = "fahrzeugTyp";
-    _maxV = 100;
-    _meterZaehler = 0;
+    _maxV = 100000;
+    _millimeterZaehler = 0;
   }
 
   public void fahre(int anfangZeit, int endZeit)
   {
     for (int i = anfangZeit; i < endZeit; i++)
     {
-      double gefahreneAbschnitt = gompertzFunktion(_maxV, 10, i);
-      _meterZaehler += gefahreneAbschnitt;
-      System.out.println((int)_meterZaehler+" Meter gefahren nach "+i+" Sekunden "
-      +gompertzFunktion(_maxV, 10, i));
+      //gefahreneAbschnitt / Zeiteinheit ( 1Sekunde)
+      int gefahreneAbschnitt = gompertzFunktion(_maxV, 10, i);
+      _millimeterZaehler += gefahreneAbschnitt;
+      print();
+      // System.out.println((double)(_millimeterZaehler)/1000+
+      // " Meter gefahren nach "+i+" Sekunden "
+      // +(double)(gefahreneAbschnitt)/1000);
     }
   }
 
@@ -39,18 +43,22 @@ class Rennauto{
   //@param laufvariable gibt den Zeitabschnitt an in dem wir uns befinden
 
 
-  public double gompertzFunktion(double faktor1, int faktor2, int laufvariable)
+  public int gompertzFunktion(int faktor1, int faktor2, int laufvariable)
   {
     double b = 4;
     double c = (Math.random()+1) * faktor2;
-    return faktor1*Math.exp(-b*Math.exp(-laufvariable/c));
+    return (int) (faktor1*Math.exp(-b*Math.exp(-laufvariable/c)));
   }
 
   public double gibStrecke(){
-    return _meterZaehler;
+    return _millimeterZaehler;
   }
 
   public String gibName(){
     return _name;
+  }
+
+  public void print(){
+    System.out.printf("|%10.3f|",(double)(_millimeterZaehler)/1000);
   }
 }
