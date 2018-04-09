@@ -85,9 +85,24 @@ class Rennbahn{
     while(liefereSieger() != null);
 
     System.out.println(_sieger.gibName()+" ist Gewinner");
+  }
 
-
-
+  public void entfernen(Rennauto auto){
+    if (_auto1 == auto) {
+      _auto1 = null;
+    }
+    else if (_auto2 == auto) {
+      _auto2 = null;
+    }
+    else if (_auto3 == auto) {
+      _auto3 = null;
+    }
+    else if (_auto4 == auto) {
+      _auto4 = null;
+    }
+    else{
+      System.out.println("Dieses Auto ist nicht vorhanden");
+    }
   }
 
 }

@@ -8,4 +8,6 @@ comment3.params=
 comment3.target=Rennauto\ liefereSieger()
 comment4.params=
 comment4.target=void\ rennenDurchf\u00FChren()
-numComments=5
+comment5.params=auto
+comment5.target=void\ entfernen(Rennauto)
+numComments=6
