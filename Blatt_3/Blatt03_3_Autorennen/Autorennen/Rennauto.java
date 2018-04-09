@@ -21,9 +21,9 @@ class Rennauto{
     _meterZaehler = 0;
   }
 
-  public void fahre(int zeit)
+  public void fahre(int anfangZeit, int endZeit)
   {
-    for (int i = 1; i <= zeit; i++)
+    for (int i = anfangZeit; i < endZeit; i++)
     {
       double gefahreneAbschnitt = gompertzFunktion(_maxV, 10, i);
       _meterZaehler += gefahreneAbschnitt;
@@ -44,5 +44,13 @@ class Rennauto{
     double b = 4;
     double c = (Math.random()+1) * faktor2;
     return faktor1*Math.exp(-b*Math.exp(-laufvariable/c));
+  }
+
+  public double gibStrecke(){
+    return _meterZaehler;
+  }
+
+  public String gibName(){
+    return _name;
   }
 }
