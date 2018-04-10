@@ -18,7 +18,7 @@ class Rennauto{
     _fahrzeugTyp = fahrzeugTyp;
     _maxV = maxV;
     _millimeterZaehler = 0;
-    _maxVKurve = maxV / 3;
+    _maxVKurve = 60000;
     _v_Kurve = 0;
     _zeitK = 0;
     _zeitG = 0;
@@ -29,7 +29,7 @@ class Rennauto{
     _fahrzeugTyp = "fahrzeugTyp";
     _maxV = 100000;
     _millimeterZaehler = 0;
-    _maxVKurve = _maxV / 3;
+    _maxVKurve = 60000;
     _v_Kurve = 0;
     _zeitK = 0;
     _zeitG = 0;
@@ -44,10 +44,10 @@ class Rennauto{
     {
       //gefahreneAbschnitt / Zeiteinheit ( 1Sekunde)
       if (_v_Gerade > _maxVKurve) {
-        gefahreneAbschnitt = gompertzFunktion((-_maxVKurve), 10, i, _v_Gerade);
+        gefahreneAbschnitt = gompertzFunktion((-_maxVKurve), 5, i, _v_Gerade);
       }
       else {
-        gefahreneAbschnitt = gompertzFunktion((_maxVKurve), 10, i, _v_Gerade);
+        gefahreneAbschnitt = gompertzFunktion((_maxVKurve), 5, i, _v_Gerade);
       }
       _millimeterZaehler += gefahreneAbschnitt;
       print();
@@ -66,7 +66,7 @@ class Rennauto{
     for (int i = anfangZeit; i < endZeit; i++)
     {
       //gefahreneAbschnitt / Zeiteinheit ( 1Sekunde)
-      gefahreneAbschnitt = gompertzFunktion(_maxV-_v_Kurve, 10, i, _v_Kurve);
+      gefahreneAbschnitt = gompertzFunktion(_maxV-_v_Kurve, 5, i, _v_Kurve);
       _millimeterZaehler += gefahreneAbschnitt;
       print();
       // System.out.println((double)(_millimeterZaehler)/1000+
