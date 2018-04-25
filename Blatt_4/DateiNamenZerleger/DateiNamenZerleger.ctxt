@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=DateiNamenZerleger
+comment1.params=
+comment1.target=java.lang.String\ getDateiname()
+comment2.params=
+comment2.target=java.lang.String\ getDateiendung()
+comment3.params=
+comment3.target=java.lang.String\ getVerzeichnis()
+comment4.params=str
+comment4.target=DateiNamenZerleger(java.lang.String)
+comment5.params=
+comment5.target=void\ infoZeigen()
+numComments=6
