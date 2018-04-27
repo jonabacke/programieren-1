@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=TestKlasse
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=java.lang.String\ randomString()
+comment3.params=i\ str
+comment3.target=void\ print(double,\ java.lang.String)
+comment4.params=i
+comment4.target=int\ fak(int)
+comment5.params=n\ m
+comment5.target=int\ modulo(int,\ int)
+comment6.params=s
+comment6.target=boolean\ enthaeltVokal(java.lang.String)
+comment7.params=s
+comment7.target=boolean\ istPalindrom(java.lang.String)
+comment8.params=s
+comment8.target=int\ anzahlLeerzeichen(java.lang.String)
+numComments=9

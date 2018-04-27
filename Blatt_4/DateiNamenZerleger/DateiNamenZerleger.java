@@ -2,6 +2,7 @@ class DateiNamenZerleger{
   int _backslash;
   int _punkt;
   String _str;
+
   private String getDateiname(){
     return _str.substring(_backslash+1,_punkt) ;
   }
@@ -16,6 +17,23 @@ class DateiNamenZerleger{
 
   public DateiNamenZerleger(String str){
     _str = str;
+    _str.trim();
+    for (int i = 0;i < _str.length(); i++) {
+      if (_str.charAt(i) == '.'){
+        _punkt = i;
+        break;
+      }
+    }
+    for (int i = _str.length()-1;i > 0;i--) {
+      if (_str.charAt(i) == 92) {
+        _backslash = i;
+        break;
+      }
+    }
+  }
+
+  public DateiNamenZerleger(){
+    _str = "C:\\Eigene Daten\\Javatest\\Beispiel.java";
     _str.trim();
     for (int i = 0;i < _str.length(); i++) {
       if (_str.charAt(i) == '.'){

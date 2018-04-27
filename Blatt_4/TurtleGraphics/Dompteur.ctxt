@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Dompteur
+comment0.text=\r\n\ Exemplare\ dieser\ Klasse\ veranlassen\ Turtles\ dazu,\r\n\ Spuren\ auf\ einer\ Zeichenflaeche\ zu\ hinterlassen.\r\n\r\n\ @author\ Axel\ Schmolitzky\r\n\ @version\ 2017\r\n
+comment1.params=
+comment1.target=void\ start()
+comment1.text=\r\n\ 'PR1'\ auf\ die\ Zeichenflaeche\ zeichnen.\r\n
+numComments=2
