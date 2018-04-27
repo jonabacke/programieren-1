@@ -35,6 +35,7 @@ class TestKlasse{
           umgCounter ++;
         }
       }
+      umgCounter = umgCounter / 10;
     }
     print(fakCounter, "Fakultaet :");
     print(modCounter, "Modulo :");
