@@ -27,7 +27,7 @@ import java.util.HashMap;
  * https://en.wikipedia.org/wiki/Turtle_graphics</a>
  * <br><br>
  * Diese Java-Version nach einer Vorlage von Alfred Hermes (14.12.2003)
- * 
+ *
  * @author Simon Gerlach
  * @author Fredrik Winkler
  * @author Axel Schmolitzky (JavaFX)
@@ -239,7 +239,7 @@ class Turtle
      */
     public double gibY()
     {
-        return _y; 
+        return _y;
     }
 
     /**
@@ -270,8 +270,8 @@ class Turtle
 
     private static class TurtleWelt
     {
-        public static final int WIDTH = 500;
-        public static final int HEIGHT = 500;
+        public static final int WIDTH = 2000;
+        public static final int HEIGHT = 1000;
 
         public static final TurtleWelt globaleWelt = new TurtleWelt();
 
@@ -288,7 +288,7 @@ class Turtle
         {
             Stage stage = new Stage();
             stage.setAlwaysOnTop(false);
-            stage.setTitle("Turtle Graphics - Zeichenfläche löschbar mit Rechts-Klick");
+            stage.setTitle("Turtle Graphics - Zeichenflï¿½che lï¿½schbar mit Rechts-Klick");
             stage.setResizable(false);
             Group root = new Group();
             Canvas canvas = new Canvas(WIDTH,HEIGHT);

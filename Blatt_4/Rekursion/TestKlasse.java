@@ -35,14 +35,13 @@ class TestKlasse{
           umgCounter ++;
         }
       }
-      umgCounter = umgCounter / 10;
     }
     print(fakCounter, "Fakultaet :");
     print(modCounter, "Modulo :");
     print(vokCounter, "Vokal :");
     print(palCounter, "Palindrom :");
     print(spcCounter, "Leerzeichen :");
-    print(umgCounter, "Umgedreht :");
+    print(umgCounter / 10, "Umgedreht :");
   }
 
   public static String randomString(){
