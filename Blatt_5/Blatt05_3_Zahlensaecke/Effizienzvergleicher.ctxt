@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Effizienzvergleicher
+comment0.text=\r\n\ Diese\ Klasse\ vergleicht\ die\ Effizienz\ verschiedener\ Implementationen\ von\ Zahlensack.\r\n\r\n\ Implementiert\ in\ der\ Methode\ vermesse(Zahlensack)\ den\ fehlenden\ Code\!\r\n\r\n\ @author\ Fredrik\ Winkler,\ Christian\ M.\ Spaeh\r\n\ @version\ 2017\r\n
+comment1.params=groesse
+comment1.target=void\ vergleiche(int)
+comment1.text=\r\n\ Vergleicht\ die\ Effizienz\ verschiedener\ Implementationen\ von\ Zahlensack.\r\n\ Alle\ Zahlensaecke\ werden\ mit\ der\ gleichen\ Groesse\ erzeugt.\r\n\ \r\n\ @param\ groesse\ die\ Groesse\ der\ Zahlensaecke\r\n
+comment2.params=sack
+comment2.target=void\ vermesse(Zahlensack)
+comment2.text=\r\n\ Misst\ die\ Zeit,\ die\ fuer\ das\ Entfernen\ von\ sehr\ vielen\ Zahlen\ aus\ dem\r\n\ Zahlensack\ benoetigt\ wird.\ Das\ Ergebnis\ wird\ auf\ der\ Konsole\ ausgegeben.\r\n\ \r\n\ @param\ sack\ der\ zu\ vermessende\ Zahlensack\r\n
+numComments=3

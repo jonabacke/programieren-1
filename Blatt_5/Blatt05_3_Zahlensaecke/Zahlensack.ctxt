@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Zahlensack
+comment0.text=\r\n\ Ein\ Zahlensack\ ist\ ein\ Datentyp,\ welcher\ eine\ gewisse\ Anzahl\ an\r\n\ unterschiedlichen\ (\!),\ zufaelligen\ Zahlen\ liefert.\ Die\ Zahlen\ liegen\ \r\n\ dabei\ immer\ zwischen\ 0\ und\ Groesse-1,\ d.h.\ ein\ Zahlensack\ der\ Groesse\ 10\ \r\n\ liefert\ Zufallszahlen\ aus\ der\ Menge\ {0,\ 1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 7,\ 8,\ 9}.\r\n\ \r\n\ Vorstellbar\ ist\ z.B.\ ein\ Zahlensack\ der\ Groesse\ 32,\ welcher\ immer\r\n\ wieder\ neue\ Skatblaetter\ generiert.\ Denn\:\ die\ ersten\ 32\ gezogenen\ Zahlen\r\n\ sind\ garantiert\ unterschiedlich,\ die\ naechsten\ 32\ ebenfalls\ usw.\r\n\ \r\n\ Ein\ frisch\ generierter\ Zahlensack\ ist\ immer\ leer;\ der\ erste\ Aufruf\ von\ \r\n\ entferneZahl\ bewirkt\ dann,\ dass\ der\ Zahlensack\ vorab\ automatisch\ bef\u00FCllt\ wird,\r\n\ siehe\ die\ Beschreibung\ von\ entferneZahl.\r\n\ \r\n\ @author\ Fredrik\ Winkler,\ Axel\ Schmolitzky\r\n\ @version\ 2017\r\n
+comment1.params=
+comment1.target=int\ gibGroesse()
+comment1.text=\r\n\ @return\ die\ Groesse\ des\ Zahlensacks\r\n
+comment2.params=
+comment2.target=int\ gibAnzahl()
+comment2.text=\r\n\ @return\ die\ Anzahl\ der\ Zahlen,\ die\ sich\ momentan\ im\ Zahlensack\ befinden\r\n
+comment3.params=
+comment3.target=boolean\ istLeer()
+comment3.text=\r\n\ @return\ true,\ falls\ der\ Zahlensack\ leer\ ist\r\n
+comment4.params=
+comment4.target=int\ entferneZahl()
+comment4.text=\r\n\ Entfernt\ eine\ Zahl\ aus\ dem\ Zahlensack\ und\ liefert\ sie\ zurueck.\r\n\ Danach\ ist\ der\ Zahlensack\ um\ ein\ Element\ kleiner.\r\n\ Ausnahme\:\ Falls\ der\ Zahlensack\ vor\ dem\ Aufruf\ leer\ ist,\r\n\ wird\ er\ zuerst\ gefuellt,\ und\ nach\ dem\ Aufruf\ ist\ gibAnzahl()\ \=\=\ gibGroesse()-1.\r\n\ \r\n\ @return\ eine\ zufaellige\ Zahl\ im\ Intervall\ [0,\ gibGroesse()-1]\r\n
+comment5.params=
+comment5.target=void\ leereSack()
+comment5.text=\r\n\ Verwirft\ alle\ uebrig\ gebliebenen\ Zahlen\ aus\ dem\ Zahlensack.\r\n\ istLeer()\ liefert\ anschliessend\ true\ zurueck,\ und\ gibAnzahl()\ liefert\ 0.\r\n
+numComments=6

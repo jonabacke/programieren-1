@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=SpielfeldString
+comment1.params=
+comment1.target=SpielfeldString()
+comment1.text=\r\n\ Initialisiert\ ein\ neues,\ leeres\ Spielfeld.\r\n
+comment2.params=zeile\ spalte
+comment2.target=int\ gibBesitzer(int,\ int)
+comment3.params=zeile\ spalte\ spieler
+comment3.target=void\ besetzePosition(int,\ int,\ int)
+comment4.params=
+comment4.target=boolean\ istVoll()
+numComments=5

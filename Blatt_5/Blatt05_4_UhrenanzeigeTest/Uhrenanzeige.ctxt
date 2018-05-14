@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Uhrenanzeige
+comment0.text=\r\n\ Die\ Klasse\ Uhrenanzeige\ simuliert\ digitale\ Uhren\ mit\ Stunden-\ und\r\n\ Minutenanzeige.\ Der\ Minutentakt\ wird\ ueber\ einen\ Methodenaufruf\ vorgegeben.\r\n\ Nach\ dem\ ersten\ Laden\ dieses\ Projekts\ befindet\ sich\ ein\ Fehler\ in\ der\ Methode\r\n\ taktSignalGeben().\r\n\ \r\n\ @author\ Christian\ Spaeh\r\n\ @version\ 2017\r\n
+comment1.params=
+comment1.target=Uhrenanzeige()
+comment1.text=\r\n\ Eine\ neue\ Uhrenanzeige\ wird\ auf\ 00\:00\ initialisiert.\r\n
+comment2.params=stunden\ minuten
+comment2.target=void\ setzeUhrzeit(int,\ int)
+comment2.text=\r\n\ Setzt\ die\ Uhrzeit\ auf\ die\ uebergebenen\ Werte.\r\n\ \r\n\ @param\ stunden\r\n\ \ \ \ \ \ \ \ \ \ \ \ Der\ neue\ Stundenwert\r\n\ @param\ minuten\r\n\ \ \ \ \ \ \ \ \ \ \ \ Der\ neue\ MinutenwertS\r\n
+comment3.params=
+comment3.target=void\ taktSignalGeben()
+comment3.text=\r\n\ Gibt\ einen\ Minutentakt\ und\ schaltet\ die\ Uhr\ eine\ Minute\ weiter.\r\n\ @TODO\ Hier\ steckt\ noch\ ein\ Fehler\ im\ Detail.\r\n
+comment4.params=
+comment4.target=java.lang.String\ gibUhrzeit()
+comment4.text=\r\n\ Gibt\ die\ aktuelle\ Uhrzeit\ im\ Format\ "HH\:MM"\ zurueck.\r\n\ Sowohl\ Stunden\ als\ auch\ Minuten\ werden\ immer\ zweistellig\r\n\ ausgegeben,\ gegebenenfalls\ mit\ fuehrender\ Null.\r\n\ \r\n\ @return\ die\ Uhrzeit\ dieser\ Uhrenanzeige\r\n
+numComments=5

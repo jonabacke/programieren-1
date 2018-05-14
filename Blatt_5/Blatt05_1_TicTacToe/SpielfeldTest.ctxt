@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=SpielfeldTest
+comment0.text=\r\n\ Eine\ Testklasse\ fuer\ Spielfeld-Klassen.\r\n\r\n\ @author\ Christian\ Spaeh,\ Fredrik\ Winkler,\ Axel\ Schmolitzky\r\n\ @version\ 2017\r\n
+comment1.params=
+comment1.target=SpielfeldTest()
+comment1.text=\r\n\ Jede\ Testmethode\ arbeitet\ auf\ einem\ frisch\ erzeugten\ Test-Exemplar.\r\n\ Im\ Konstruktor\ kann\ man\ also\ den\ erforderlichen\ Ausgangszustand\r\n\ fuer\ die\ einzelnen\ Testmethoden\ herstellen,\ in\ diesem\ Fall\ ein\ neues\ Spielfeld.\r\n
+comment2.params=
+comment2.target=void\ testBefuelleSpielfeldKomplett()
+comment2.text=\r\n\ Wenn\ alle\ Positionen\ besetzt\ sind,\ solle\ das\ Spielfeld\ voll\ sein.\r\n\ Vorher\ sollte\ es\ immer\ eine\ freie\ Position\ geben.\r\n
+comment3.params=
+comment3.target=void\ testBefuelleSpielfeldKomplettRueckwaerts()
+comment3.text=\r\n\ Wenn\ alle\ Positionen\ besetzt\ sind,\ solle\ das\ Spielfeld\ voll\ sein.\r\n\ Vorher\ sollte\ es\ immer\ eine\ freie\ Position\ geben.\ Dieser\ Test\r\n\ befuellt\ das\ Spielfeld\ von\ hinten\ nach\ vorne.\r\n
+comment4.params=
+comment4.target=void\ testBesetzeNeunMalDieselbePosition()
+comment4.text=\r\n\ Wenn\ neun\ Mal\ dieselbe\ Position\ besetzt\ wird,\r\n\ sollte\ das\ Spielfeld\ nicht\ voll\ sein.\r\n
+comment5.params=
+comment5.target=void\ test3()
+comment5.text=\r\n\ Schreibt\ in\ diesen\ Kommentar,\ was\ diese\ Methode\ testet\:\r\n\ \r\n\ \r\n
+numComments=6

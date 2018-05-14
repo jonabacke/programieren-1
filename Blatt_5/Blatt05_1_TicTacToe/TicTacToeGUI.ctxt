@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=TicTacToeGUI
+comment0.text=\r\n\ Die\ Grafische\ Benutzungsoberflaeche\ fuer\ Tic\ Tac\ Toe.\r\n\ @author\ Fredrik\ Winkler,\ Axel\ Schmolitzky\r\n\ @version\ 2017\r\n
+comment1.params=
+comment1.target=TicTacToeGUI()
+comment2.params=
+comment2.target=void\ refreshPlayfield()
+comment3.params=
+comment3.target=void\ refreshLabel()
+comment4.params=
+comment4.target=void\ refresh()
+comment5.params=spieler
+comment5.target=java.lang.String\ nameFuer(int)
+comment6.params=besitzer
+comment6.target=java.lang.String\ beschriftungFuer(int)
+numComments=7
