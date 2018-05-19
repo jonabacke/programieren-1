@@ -1,9 +1,8 @@
 #BlueJ class context
-comment0.target=SpielfeldString
-comment0.text=\r\n\ Ein\ Spielfeld\ besteht\ aus\ drei\ Zeilen\ mit\ je\ drei\ Spalten.\ Man\ kann\ an\ den\ neun\r\n\ Positionen\ einen\ der\ beiden\ Spieler\ als\ Besitzer\ eintragen\ und\ auslesen.\r\n\r\n\ @author\ Jonathan\ Backes\r\n\ @version\ 14.05.2018\r\n
+comment0.target=SpielfeldGeflechtEnum
+comment0.text=\r\n\ Ein\ Spielfeld\ besteht\ aus\ drei\ Zeilen\ mit\ je\ drei\ Spalten.\ Man\ kann\ an\ den\ neun\r\n\ Positionen\ einen\ der\ beiden\ Spieler\ als\ Besitzer\ eintragen\ und\ auslesen.\r\n\r\n\ @author\ (Jonathan\ Backes)\r\n\ @version\ (15.05.2018)\r\n
 comment1.params=
-comment1.target=SpielfeldString()
-comment1.text=\r\n\ Initialisiert\ ein\ neues,\ leeres\ Spielfeld.\r\n
+comment1.target=SpielfeldGeflechtEnum()
 comment2.params=zeile\ spalte
 comment2.target=int\ gibBesitzer(int,\ int)
 comment2.text=\r\n\ Gibt\ den\ Besitzer\ der\ angegebenen\ Position\ auf\ dem\ Spielfeld.\r\n\r\n\ @param\ zeile\r\n\ \ \ \ \ \ \ \ \ \ \ \ vertikale\ Position\ (0-2)\r\n\ @param\ spalte\r\n\ \ \ \ \ \ \ \ \ \ \ \ horizontale\ Position\ (0-2)\r\n\ @return\ 0\ (unbesetzt),\ 1\ (Spieler\ 1),\ 2\ (Spieler\ 2)\r\n

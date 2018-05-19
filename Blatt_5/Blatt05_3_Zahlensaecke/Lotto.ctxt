@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Lotto
+comment0.text=\r\n\ In\ Dieser\ Klasse\ wird\ Lotto\ gespielt.\r\n\ Daf\u00FCr\ werden\ die\ Methoden\ Auswahl,\ Naiv,\ und\ Permutation\ genutzt.\r\n\ \r\n\ Autor\:\ Jonathan\ Backes\r\n\ Version\:\ 18.05.2018\r\n
+comment1.params=
+comment1.target=void\ sechsAus49()
+comment1.text=\r\n\ In\ dieser\ Methode\ werden\ die\ drei\ Exemplare\ erstellt\ und\ in\ die\ \r\n\ Ausgabe\ geschickt.\r\n
+comment2.params=zahlensack\ anzahl
+comment2.target=void\ zahlenHoler(Zahlensack,\ int)
+comment2.text=\r\n\ In\ diese\ Methoden\ werden\ die\ Saecke\ \u00FCbergeben\ und\ die\ anzahl\ wie\ oft\ zuf\u00E4llig\ \r\n\ Zahlen\ entnommen\ werden\ sollen.\ Schlieslich\ werden\ sie\ noch\ ausgegeben\r\n
+numComments=3

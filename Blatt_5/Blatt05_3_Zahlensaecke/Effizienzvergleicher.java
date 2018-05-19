@@ -40,18 +40,26 @@ class Effizienzvergleicher
     private void vermesse(Zahlensack sack)
     {
         // Speichere die aktuelle Zeit als Startzeit
+        double startZeit = System.nanoTime();
  
         // Rufe 1 Mio. Mal "entferneZahl" auf
+        for(int i = 0; i < 1000000; i++){
+            sack.entferneZahl();
+        }
 
         // Speichere die aktuelle Zeit als Stoppzeit
+        double stoppZeit = System.nanoTime();
 
         // Bilde die Differenz aus Stoppzeit und Startzeit
+        double laufZeit = stoppZeit - startZeit;
         
         // Teile die Differenz durch 1000000, um von ns nach ms umzurechnen
+        laufZeit = laufZeit / 1000000;
 
         System.out.print(sack); // Beschreibung des Zahlensacks ausgeben
         System.out.print(": "); // gefolgt von einem Doppelpunkt
         // Gib das Ergebnis auf der Konsole aus
-        
+        System.out.print(laufZeit +" ms");
+        System.out.println();
     }
 }
