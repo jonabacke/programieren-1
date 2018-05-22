@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ZahlensackTest
+comment0.text=\r\n\ Die\ Test-Klasse\ ZahlensackTest.\r\n\r\n\ @author\ \ (Ihr\ Name)\r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment1.params=
+comment1.target=ZahlensackTest()
+comment1.text=\r\n\ Die\ verschiedenen\ Objekte\ werden\ mit\ einer\ gr\u00F6\u00DFe\ von\ 100\ inizialisiert\r\n
+comment2.params=
+comment2.target=void\ testEntferneZahl()
+comment2.text=\r\n\ \ Wird\ getestet\ ob\ wirklich\ eine\ Zehl\ entfernt\ wird.\r\n
+comment3.params=
+comment3.target=void\ testLeereSack()
+comment3.text=\r\n\ \ Teste\ ob\ der\ Sack\ zu\ Anfang\ leer\ ist\r\n\ \ Dann\ wird\ der\ Sack\ bef\u00FCllt\r\n\ \ Teste\ ob\ Sack\ nicht\ leer\ ist\r\n\ \ Sack\ geleert\r\n\ \ Teste\ ob\ Sack\ wieder\ leer\ ist\r\n
+numComments=4
