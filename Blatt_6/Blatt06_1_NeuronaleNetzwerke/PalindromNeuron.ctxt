@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=PalindromNeuron
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ PalindromNeuron.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment1.params=gross
+comment1.target=PalindromNeuron(boolean)
+comment2.params=signal
+comment2.target=void\ eingangHinzuf\u00FCgen(Neuronen)
+comment3.params=
+comment3.target=void\ palindromNeuron()
+comment4.params=signal
+comment4.target=boolean\ istPalindrom(java.lang.String)
+comment4.text=\r\n\ Gibt\ an,\ ob\ die\ Zeichenkette\ ein\ Palindrom\ ist.\ Auswertungen\:\r\n\r\n\ istPalindrom("anna")\ ->\ istPalindrom("nn")\ ->\ istPalindrom("")\ ->\ true\r\n\ istPalindrom("asta")\ ->\ istPalindrom("st")\ ->\ false\r\n\ istPalindrom("axa")\ ->\ istPalindrom("x")\ ->\ true\r\n\ istPalindrom("xyz")\ ->\ false\r\n\ @param\ s\ ein\ beliebiger\ String\ ungleich\ null\r\n
+comment5.params=
+comment5.target=Wagen\ getAusgangswert()
+numComments=6

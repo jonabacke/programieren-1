@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=KonkatenationNeuron
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ KonkatenationNeuron.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment1.params=
+comment1.target=KonkatenationNeuron()
+comment2.params=signal
+comment2.target=void\ eingangHinzuf\u00FCgen(Neuronen)
+comment3.params=
+comment3.target=Wagen\ getAusgangswert()
+comment4.params=
+comment4.target=java.lang.String\ ausgabe()
+comment5.params=
+comment5.target=void\ lone()
+numComments=6

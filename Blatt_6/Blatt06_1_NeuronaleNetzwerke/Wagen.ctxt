@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Wagen
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ ListenObjekt.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment1.params=string
+comment1.target=Wagen(java.lang.String)
+comment2.params=
+comment2.target=Wagen\ getNextWagen()
+comment3.params=
+comment3.target=java.lang.String\ getString()
+comment4.params=
+comment4.target=boolean\ getBool()
+comment5.params=string
+comment5.target=void\ setString(java.lang.String)
+comment6.params=bool
+comment6.target=void\ setIstPalindrom(boolean)
+comment7.params=wagon
+comment7.target=void\ setNextWagen(Wagen)
+numComments=8

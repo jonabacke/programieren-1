@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Zweistufig
+comment0.text=\r\n\ Vergleicht\ zwei\ Personen\ anhand\ eines\ primaeren\ Vergleichers.\r\n\ Wenn\ die\ beiden\ Personen\ laut\ diesem\ primaeren\ Vergleicher\ gleich\ sind,\r\n\ dann\ werden\ die\ Personen\ anhand\ eines\ sekundaeren\ Vergleichers\ verglichen.\r\n\ \r\n\ @author\ Fredrik\ Winkler\r\n\ @version\ 2017\r\n
+comment1.params=primaer\ sekundaer
+comment1.target=Zweistufig(Vergleicher,\ Vergleicher)
+comment1.text=\r\n\ @param\ primaer\ der\ primaere\ Vergleicher\r\n\ @param\ sekundaer\ der\ sekundaere\ Vergleicher\r\n
+comment2.params=a\ b
+comment2.target=int\ vergleiche(Person,\ Person)
+comment2.text=\r\n\ @see\ Vergleicher.vergleiche\r\n
+numComments=3
