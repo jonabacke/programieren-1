@@ -34,7 +34,7 @@ public class TestNeuronen
      * Wird vor jeder Testfall-Methode aufgerufen.
      */
     @Test
-    public void setUp()
+    public void beachtungGross()
     {
         _palindrom = new PalindromNeuron(true);
         _palindrom.eingangHinzufügen(_signal1);
@@ -44,11 +44,13 @@ public class TestNeuronen
         assertEquals("axa ", _kette.ausgabe());
         _palindrom.eingangHinzufügen(_signal2);
         _palindrom.palindromNeuron();
+        _kette.eingangHinzufügen(_signal2);        
         _palindrom.eingangHinzufügen(_signal3);
         _palindrom.palindromNeuron();
-        _kette.eingangHinzufügen(_signal2);
         _kette.eingangHinzufügen(_signal3);
-        assertEquals("axa axa otto ", _kette.ausgabe());
+        assertEquals("axa otto ", _kette.ausgabe());
+        _kette.eingangHinzufügen(_signal1);
+        assertEquals("axa otto axa ", _kette.ausgabe());
     }
 
     /**
@@ -57,7 +59,22 @@ public class TestNeuronen
      * Wird nach jeder Testfall-Methode aufgerufen.
      */
     @After
-    public void tearDown()
+    public void nichtBeachtungGross()
     {
+        _palindrom = new PalindromNeuron(false);
+        _palindrom.eingangHinzufügen(_signal1);
+        _palindrom.palindromNeuron();
+        _kette = new KonkatenationNeuron();
+        _kette.eingangHinzufügen(_signal1);
+        assertEquals("axa lagerregaL ", _kette.ausgabe());
+        _palindrom.eingangHinzufügen(_signal2);
+        _palindrom.palindromNeuron();
+        _kette.eingangHinzufügen(_signal2);        
+        _palindrom.eingangHinzufügen(_signal3);
+        _palindrom.palindromNeuron();
+        _kette.eingangHinzufügen(_signal3);
+        assertEquals("axa lagerregaL Anna otto lagerregaL ", _kette.ausgabe());
+        _kette.eingangHinzufügen(_signal1);
+        assertEquals("axa lagerregaL Anna otto lagerregaL axa lagerregaL ", _kette.ausgabe());
     }
 }

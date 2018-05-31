@@ -16,6 +16,16 @@ public class Wagen
         _nextWagen = null;
     }
     
+    public Wagen(String string, boolean bool){
+        setString(string);
+        setBool(bool);
+        _nextWagen = null;
+    }
+    
+    public void setBool(boolean bool){
+        _istPalindrom = bool;
+    }
+    
     public Wagen getNextWagen(){
         return _nextWagen;
     }

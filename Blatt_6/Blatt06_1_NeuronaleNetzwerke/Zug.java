@@ -30,4 +30,10 @@ public class Zug
         Wagen lastWagon = getLastWagen();
         lastWagon.setNextWagen(wagon);
     }
+    
+    public void addLast(String string, boolean bool){
+        Wagen wagon = new Wagen(string, bool);
+        Wagen lastWagon = getLastWagen();
+        lastWagon.setNextWagen(wagon);
+    }
 }

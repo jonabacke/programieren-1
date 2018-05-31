@@ -5,12 +5,12 @@
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class KonkatenationNeuron implements Neuronen
+public class KonkatenationNeuron 
 {
-    private Zug _zug;
+    private Zug _neuZug;
     private String _string;
     private Wagen _wagen;
-    private Zug _hilfsZug;
+    private Zug _zug;
     
     public KonkatenationNeuron(){
         _string = "";
@@ -18,21 +18,20 @@ public class KonkatenationNeuron implements Neuronen
     }
     
     public void eingangHinzufügen(Neuronen signal){
+        Wagen wagen = signal.getAusgangswert();
+        Zug neuZug = dublizieren(wagen);
         _wagen = _zug.getLastWagen();
-        _wagen.setNextWagen(signal.getAusgangswert());
+        _wagen.setNextWagen(neuZug.getLock());
     }
     
     public Wagen getAusgangswert(){
-        return _zug.getLock();
+        return _neuZug.getLock();
     }
     
     public String ausgabe(){
         String ausgabe = _string;
-        _hilfsZug = new Zug("");
-        Wagen lastWagen = _hilfsZug.getLastWagen();
-        lastWagen = _zug.getLock();
-        Wagen schaffner = _hilfsZug.getLock();
-        while (schaffner.getNextWagen() != null){
+        Wagen schaffner = _zug.getLock();
+        while (schaffner != null){
             if (schaffner.getBool()){
                 ausgabe += schaffner.getString();
                 ausgabe += " ";
@@ -40,15 +39,16 @@ public class KonkatenationNeuron implements Neuronen
             schaffner = schaffner.getNextWagen();
         }
         System.out.println(ausgabe);
-        lone();
         return ausgabe;
     }
     
-    public void lone(){
-        Wagen schaffner = _zug.getLock();
-        _hilfsZug = new Zug(_zug.getLock().getString());
-        while(schaffner.getNextWagen() != null){
-            _hilfsZug.addLast(schaffner.getString());
+    public Zug dublizieren(Wagen wagen){
+        Zug zug = new Zug("");
+        Wagen schaffner = wagen;
+        while(schaffner != null){
+            zug.addLast(schaffner.getString(), schaffner.getBool());
+            schaffner = schaffner.getNextWagen();
         }
+        return zug;
     }
 }

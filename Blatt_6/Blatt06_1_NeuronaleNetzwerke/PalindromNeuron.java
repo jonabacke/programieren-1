@@ -20,7 +20,7 @@ public class PalindromNeuron implements Neuronen
     
     public void palindromNeuron(){
         Wagen schaffner = _lock;
-        while (schaffner.getNextWagen() != null){
+        while (schaffner != null){
             boolean istPalindrom;
             istPalindrom = istPalindrom(schaffner.getString());
             schaffner.setIstPalindrom(istPalindrom);
@@ -47,7 +47,7 @@ public class PalindromNeuron implements Neuronen
       }
       else {
         if (signal.charAt(0) == signal.charAt(signal.length()-1)) {
-          return istPalindrom(signal.substring(1,1));
+          return istPalindrom(signal.substring(1,signal.length()-1));
         }
         else{
           return false;
