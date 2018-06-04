@@ -9,21 +9,29 @@
 public class KomandoZeile
 {
     public static void main(String[] args){
+        int [] haeufigkeit = new int [26];
         for(int i = 0; i < args.length; i++){
             System.out.println(args [i]);
+            analysiereText(args[i], haeufigkeit);
         }
-        int [] haeufigkeit = new int [26];
-        analysiereText(args, haeufigkeit);
         for (int i = 0; i < 26; i++){
             System.out.println((char)('a'+i) +": " + haeufigkeit[i]);
         }
     }
-    
-    public static void analysiereText(String [] str, int [] haeufigkeit){
-        for (int i = 0; i < str.length; i++){
-            for (int j = 0; j < str [i].length(); j++){
-                haeufigkeit [str[i].charAt(j) - 'a'] += 1;
+    /**
+     * zaehlt die chars im wort.
+     * Andere Zeichen als Buchstaben werden ignoriert
+     * 
+     * @param str Uebergeben eines Wortes
+     * @param int-array in dem die anzahl Buchstaben gezaehlt wird.
+     */
+    public static void analysiereText(String str, int [] haeufigkeit){
+        try {
+            str = str.toLowerCase();
+            for (int j = 0; j < str.length(); j++){
+                haeufigkeit [str.charAt(j) - 'a'] += 1;
             }
+        } catch(ArrayIndexOutOfBoundsException e){
         }
     }
 }

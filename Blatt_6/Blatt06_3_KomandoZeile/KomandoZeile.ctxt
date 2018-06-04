@@ -4,5 +4,6 @@ comment0.text=\r\n\ In\ dieser\ Klasse\ wird\ die\ eingabe\ an\ den\ Benutzer\ w
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 comment2.params=str\ haeufigkeit
-comment2.target=void\ analysiereText(java.lang.String[],\ int[])
+comment2.target=void\ analysiereText(java.lang.String,\ int[])
+comment2.text=\r\n\ zaehlt\ die\ chars\ im\ wort.\r\n\ @param\ str\ Uebergeben\ eines\ Wortes\r\n\ @param\ int-array\ in\ dem\ die\ anzahl\ Buchstaben\ gezaehlt\ wird.\r\n
 numComments=3
