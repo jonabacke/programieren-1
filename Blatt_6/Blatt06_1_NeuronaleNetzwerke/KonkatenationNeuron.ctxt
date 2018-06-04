@@ -1,14 +1,19 @@
 #BlueJ class context
 comment0.target=KonkatenationNeuron
-comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ KonkatenationNeuron.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment0.text=\r\n\ In\ dieser\ Klasse\ werden\ die\ verschiedenen\ Signale\ aneinander\ gereiht\r\n\ und\ ausgegeben\r\n\ \r\n\ @author\ Jonathan\ Backes\r\n\ @version\ 31.05.2018\r\n
 comment1.params=
 comment1.target=KonkatenationNeuron()
+comment1.text=\r\n\ Im\ Konstruktor\ wird\ der\ Anfang\ der\ Liste\ erstellt\ die\ sp\u00E4ter\ alle\ \r\n\ eingegebenen\ Signale\ beinhaltet\r\n\ \r\n
 comment2.params=signal
 comment2.target=void\ eingangHinzuf\u00FCgen(Neuronen)
+comment2.text=\r\n\ In\ dieser\ Methode\ wird\ ein\ neues\ Signal\ in\ die\ Liste\ eingef\u00FCgt\r\n\ \r\n\ @param\ signal\ Signal\ aus\ dem\ Signalneuron\r\n
 comment3.params=
 comment3.target=Wagen\ getAusgangswert()
+comment3.text=\r\n\ Referenz\ auf\ das\ erste\ Listenobjekt\r\n\ \r\n\ @return\ Wagen\ erster\ Wagen\ der\ Liste\r\n
 comment4.params=
 comment4.target=java.lang.String\ ausgabe()
+comment4.text=\r\n\ Mit\ dieser\ Methode\ werden\ alle\ Palindrome\ aus\ der\ Liste\ ausgegeben\r\n\ und\ zur\u00FCckgegeben\r\n\ \r\n\ @return\ String\ String\ mit\ allen\ Palindromen\r\n
 comment5.params=wagen
 comment5.target=Zug\ dublizieren(Wagen)
+comment5.text=\r\n\ In\ dieser\ Hilfsmethode\ werden\ die\ eingehenden\ Listen\ dubliziert\ \r\n\ um\ eine\ in\ ihren\ eigenen\ Schwanz\ bei\u00DFende\ Schlange\ zu\ verhindern\r\n\ \r\n\ @param\ wagen\ erstes\ Element\ der\ dublizierenden\ Liste\r\n\ @return\ Zug\ neu\ erstellte\ Liste\r\n
 numComments=6

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=KomandoZeile
+comment0.text=\r\n\ In\ dieser\ Klasse\ wird\ die\ eingabe\ an\ den\ Benutzer\ wieder\ ausgegeben\ und\ \r\n\ die\ Buschstaben\ der\ eingabe\ gezaehlt.\r\n\ \r\n\ @author\ Jonathan\ Backes\r\n\ @version\ 01.06.2018\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=str\ haeufigkeit
+comment2.target=void\ analysiereText(java.lang.String[],\ int[])
+numComments=3

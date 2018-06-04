@@ -1,14 +1,19 @@
 #BlueJ class context
 comment0.target=Zug
-comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Liste.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment0.text=\r\n\ Mit\ dieser\ Klasse\ wird\ eine\ Liste\ (Zug)\ erstellt\ die\ aus\ mehreren\ \r\n\ Elementen\ (Wagen\ )\ bestehen\ kann\r\n\ \r\n\ @author\ Jonathan\ Backes\ \r\n\ @version\ 31.05.2018\r\n
 comment1.params=string
 comment1.target=Zug(java.lang.String)
+comment1.text=\r\n\ Im\ Konstruktor\ wird\ das\ erste\ Element\ der\ Liste\ erstellt\ (Lock)\r\n\ \r\n\ @param\ string\ string\ der\ im\ ersten\ Element\ gespeichert\ werden\ soll\r\n
 comment2.params=
 comment2.target=Wagen\ getLastWagen()
+comment2.text=\r\n\ Mit\ dieser\ Methode\ wird\ das\ letzte\ Elemen\ t\ der\ Liste\ herausgefunden\r\n\ \r\n\ @return\ Wagen\ letztes\ Element\ der\ Liste\r\n
 comment3.params=
 comment3.target=Wagen\ getLock()
+comment3.text=\r\n\ Diese\ Methode\ gibt\ das\ erste\ Element\ zur\u00FCck\r\n\ \r\n\ @return\ Wagen\ erstes\ Element\r\n
 comment4.params=string
 comment4.target=void\ addLast(java.lang.String)
+comment4.text=\r\n\ Mit\ dieser\ Methode\ kann\ ein\ Element\ in\ die\ Liste\ hinzugef\u00FCgt\ werden\r\n\ \r\n\ @param\ string\ String\ den\ das\ Element\ beinhalten\ soll\r\n
 comment5.params=string\ bool
 comment5.target=void\ addLast(java.lang.String,\ boolean)
+comment5.text=\r\n\ Mit\ dieser\ Methode\ kann\ ein\ Element\ in\ die\ Liste\ hinzugef\u00FCgt\ werden\r\n\ \r\n\ @param\ string\ String\ den\ das\ Element\ beinhalten\ soll\r\n\ @param\ bool\ Booleanwert\ dass\ das\ Element\ haben\ soll\r\n
 numComments=6

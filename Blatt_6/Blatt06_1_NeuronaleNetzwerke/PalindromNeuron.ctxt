@@ -1,15 +1,19 @@
 #BlueJ class context
 comment0.target=PalindromNeuron
-comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ PalindromNeuron.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment0.text=\r\n\ In\ dieser\ Klasse\ werden\ die\ Strings,\ die\ in\ den\ einzelnen\ Listenelementen\r\n\ sind\ auf\ palindrom\ gepr\u00FCft\r\n\ \r\n\ @author\ Jonathan\ Backes\r\n\ @version\ 31.05.2018\r\n
 comment1.params=gross
 comment1.target=PalindromNeuron(boolean)
+comment1.text=\r\n\ im\ Konstruktor\ wird\ \u00FCbergeben\ ob\ gross-\ und\ kleinschreibung\ beachtet\r\n\ werden\ soll\r\n\ \r\n\ @param\ gross\ true\ fuer\ soll\ beachtet\ werden\ fals\ fuer\ soll\ nicht\ \r\n\ beachtet\ werden\ \r\n
 comment2.params=signal
 comment2.target=void\ eingangHinzuf\u00FCgen(Neuronen)
+comment2.text=\r\n\ In\ dieser\ Methode\ wird\ ein\ neues\ Signal\ in\ die\ Liste\ eingef\u00FCgt\r\n\ \r\n\ @param\ signal\ Signal\ aus\ dem\ Signalneuron\r\n
 comment3.params=
 comment3.target=void\ palindromNeuron()
+comment3.text=\r\n\ Bei\ dieser\ Methode\ werden\ die\ Strings\ aus\ dem\ Listenelement\ geholt\ in\r\n\ den\ Palindrompruefer\ geworfen\ und\ das\ Ergebniss\ in\ das\ Listenelement\ \r\n\ geschrieben\r\n
 comment4.params=signal
 comment4.target=boolean\ istPalindrom(java.lang.String)
-comment4.text=\r\n\ Gibt\ an,\ ob\ die\ Zeichenkette\ ein\ Palindrom\ ist.\ Auswertungen\:\r\n\r\n\ istPalindrom("anna")\ ->\ istPalindrom("nn")\ ->\ istPalindrom("")\ ->\ true\r\n\ istPalindrom("asta")\ ->\ istPalindrom("st")\ ->\ false\r\n\ istPalindrom("axa")\ ->\ istPalindrom("x")\ ->\ true\r\n\ istPalindrom("xyz")\ ->\ false\r\n\ @param\ s\ ein\ beliebiger\ String\ ungleich\ null\r\n
+comment4.text=\r\n\ Gibt\ an,\ ob\ die\ Zeichenkette\ ein\ Palindrom\ ist.\ Auswertungen\:\r\n\r\n\ istPalindrom("anna")\ ->\ istPalindrom("nn")\ ->\ istPalindrom("")\ ->\ true\r\n\ istPalindrom("asta")\ ->\ istPalindrom("st")\ ->\ false\r\n\ istPalindrom("axa")\ ->\ istPalindrom("x")\ ->\ true\r\n\ istPalindrom("xyz")\ ->\ false\r\n\ @param\ signal\ ein\ beliebiger\ String\ ungleich\ null\r\n
 comment5.params=
 comment5.target=Wagen\ getAusgangswert()
+comment5.text=\r\n\ Referenz\ auf\ das\ erste\ Listenobjekt\r\n\ \r\n\ @return\ Wagen\ erster\ Wagen\ der\ Liste\r\n
 numComments=6

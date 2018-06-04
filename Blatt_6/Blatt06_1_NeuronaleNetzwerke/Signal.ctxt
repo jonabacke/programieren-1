@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=Signal
-comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Signal.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment0.text=\r\n\ Die\ Klasse\ Signal\ nimmt\ die\ Eingaben\ auf,\ splittet\ sie\ und\ verteilt\ die\r\n\ einzelnen\ Teile\ in\ einer\ Liste\r\n\ \r\n\ @author\ Jonathan\ Backes\ \r\n\ @version\ 31.05.2018\r\n
 comment1.params=signal
 comment1.target=Signal(java.lang.String)
+comment1.text=\r\n\ In\ den\ Konstruktor\ wird\ ein\ ein\ String\ \u00FCbergeb\ der\ durch\ die\ Split\r\n\ Funktion\ in\ ein\ String\ Array\ gewandelt\ wird\ und\ in\ eine\ Liste\ \r\n\ geschrieben\ wird.\r\n\ \r\n\ @param\ signal\ eingehendes\ Stringsignal\r\n
 comment2.params=
 comment2.target=Wagen\ getAusgangswert()
+comment2.text=\r\n\ Referenz\ auf\ das\ erste\ Listenobjekt\r\n\ \r\n\ @return\ Wagen\ erster\ Wagen\ der\ Liste\r\n
 numComments=3

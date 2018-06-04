@@ -1,29 +1,47 @@
 
 /**
- * Beschreiben Sie hier die Klasse PalindromNeuron.
+ * In dieser Klasse werden die Strings, die in den einzelnen Listenelementen
+ * sind auf palindrom geprüft
  * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
+ * @author Jonathan Backes
+ * @version 31.05.2018
  */
 public class PalindromNeuron implements Neuronen
 {
     private Wagen _lock;
     private boolean _gross;
     
+    /**
+     * im Konstruktor wird übergeben ob gross- und kleinschreibung beachtet
+     * werden soll
+     * 
+     * @param gross true fuer soll beachtet werden fals fuer soll nicht 
+     * beachtet werden 
+     */
     public PalindromNeuron(boolean gross){
         _gross = gross;
     }
     
+    /**
+     * In dieser Methode wird ein neues Signal in die Liste eingefügt
+     * 
+     * @param signal Signal aus dem Signalneuron
+     */
     public void eingangHinzufügen(Neuronen signal){
         _lock = signal.getAusgangswert();
     }
     
+    /**
+     * Bei dieser Methode werden die Strings aus dem Listenelement geholt in
+     * den Palindrompruefer geworfen und das Ergebniss in das Listenelement 
+     * geschrieben
+     */
     public void palindromNeuron(){
         Wagen schaffner = _lock;
         while (schaffner != null){
             boolean istPalindrom;
             istPalindrom = istPalindrom(schaffner.getString());
-            schaffner.setIstPalindrom(istPalindrom);
+            schaffner.setBool(istPalindrom);
             schaffner = schaffner.getNextWagen();
         }
     }
@@ -35,7 +53,7 @@ public class PalindromNeuron implements Neuronen
     * istPalindrom("asta") -> istPalindrom("st") -> false
     * istPalindrom("axa") -> istPalindrom("x") -> true
     * istPalindrom("xyz") -> false
-    * @param s ein beliebiger String ungleich null
+    * @param signal ein beliebiger String ungleich null
     */
     private boolean istPalindrom(String signal)
     {
@@ -55,6 +73,11 @@ public class PalindromNeuron implements Neuronen
       }
     }
     
+    /**
+     * Referenz auf das erste Listenobjekt
+     * 
+     * @return Wagen erster Wagen der Liste
+     */
     public Wagen getAusgangswert(){
         return _lock;
     }
