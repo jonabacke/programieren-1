@@ -8,6 +8,8 @@
  */
 public class KomandoZeile
 {
+    private int haufen;
+    private static int stack;
     public static void main(String[] args){
         int [] haeufigkeit = new int [26];
         for(int i = 0; i < args.length; i++){
@@ -17,6 +19,9 @@ public class KomandoZeile
         for (int i = 0; i < 26; i++){
             System.out.println((char)('a'+i) +": " + haeufigkeit[i]);
         }
+        KomandoZeile komando = new KomandoZeile();
+        komando.haufen = komando.haufen + 1;
+        stack = stack + 1;
     }
     /**
      * zaehlt die chars im wort.
