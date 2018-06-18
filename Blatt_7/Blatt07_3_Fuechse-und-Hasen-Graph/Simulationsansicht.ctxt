@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Simulationsansicht
+comment0.text=\n\ Eine\ grafische\ Ansicht\ des\ Simulationsfeldes.\ Diese\ Schnittstelle\ definiert\ alle\n\ m\u00F6glichen\ unterschiedlichen\ Ansichten.\n\n\ @author\ David\ J.\ Barnes\ und\ Michael\ K\u00F6lling\n\ @version\ 2016.03.18\n
+comment1.params=tierklasse\ farbe
+comment1.target=void\ setzeFarbe(java.lang.Class,\ java.awt.Color)
+comment1.text=\n\ Definiere\ eine\ Farbe\ f\u00FCr\ die\ gegebene\ Tierklasse.\n\ @param\ tierklasse\ \ das\ Klassenobjekt\ der\ Tierklasse\n\ @param\ farbe\ \ \ \ \ \ \ die\ zu\ benutzende\ Farbe\ f\u00FCr\ die\ Tierklasse\n
+comment2.params=feld
+comment2.target=boolean\ istAktiv(Feld)
+comment2.text=\n\ Entscheide,\ ob\ die\ Simulation\ weiterlaufen\ soll.\n\ @param\ true\ \ wenn\ mehr\ als\ eine\ Spezies\ existiert\n
+comment3.params=schritt\ feld
+comment3.target=void\ zeigeStatus(int,\ Feld)
+comment3.text=\n\ Zeige\ den\ aktuellen\ Zustand\ des\ Feldes.\n\ @param\ schritt\ \ welcher\ Iterationsschritt\ ist\ dies?\n\ @param\ feld\ \ \ \ \ das\ Feld,\ das\ angezeigt\ werden\ soll\n
+comment4.params=
+comment4.target=void\ zuruecksetzen()
+comment4.text=\n\ Bereite\ einen\ neuen\ Lauf\ vor.\n
+numComments=5

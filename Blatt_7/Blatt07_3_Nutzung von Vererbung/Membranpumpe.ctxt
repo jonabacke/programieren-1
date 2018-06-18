@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Membranpumpe
+comment0.text=\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Membranpumpe.\n\ \n\ @author\ (Ihr\ Name)\ \n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\n
+comment1.params=membranmaterial\ bezeichnung\ maximalerBetriebsdruck\ maximaleFoerdermenge\ tiefe\ hoehe\ breite\ gewicht
+comment1.target=Membranpumpe(java.lang.String,\ java.lang.String,\ float,\ int,\ int,\ int,\ int,\ int)
+comment2.params=
+comment2.target=void\ infoAusgeben()
+numComments=3

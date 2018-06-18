@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Auffangbecken
+comment0.text=\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Auffangbecken.\n\ \n\ @author\ (Ihr\ Name)\ \n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\n
+comment1.params=bezeichnung\ tiefe\ hoehe\ breite\ gewicht\ volumen
+comment1.target=Auffangbecken(java.lang.String,\ int,\ int,\ int,\ int,\ int)
+comment2.params=
+comment2.target=void\ infoAusgeben()
+numComments=3

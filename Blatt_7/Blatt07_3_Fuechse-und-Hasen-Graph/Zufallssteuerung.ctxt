@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Zufallssteuerung
+comment0.text=\n\ Steuerung\ der\ zufallsbasierten\ Elemente\ der\ Simulation.\ Indem\ dieser\ \n\ gemeinsame\ Randomisierer\ mit\ festgelegtem\ Initialisierungswert\ (SEED)\n\ benutzt\ wird,\ sind\ wiederholte\ Durchl\u00E4ufe\ exakt\ gleich\ (was\ beim\ Testen\n\ hilfreich\ sein\ kann).\ Setzen\ Sie\ 'nutzeGemeinsam'\ auf\ 'false',\ um\ jedes\n\ Mal\ ein\ anderes\ zuf\u00E4lliges\ Verhalten\ zu\ bekommen.\n\ \n\ @author\ David\ J.\ Barnes\ und\ Michael\ K\u00F6lling\n\ @version\ 2016.02.29\n
+comment1.params=
+comment1.target=Zufallssteuerung()
+comment1.text=\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Zufallssteuerung\n
+comment2.params=
+comment2.target=java.util.Random\ gibZufallsgenerator()
+comment2.text=\n\ Liefert\ einen\ Zufallsgenerator.\n\ @return\ \ ein\ Random-Objekt\n
+comment3.params=
+comment3.target=void\ zuruecksetzen()
+comment3.text=\n\ Setzt\ die\ Zufallssteuerung\ zur\u00FCck.\n\ Hat\ keinen\ Effekt,\ wenn\ f\u00FCr\ die\ Zufallssteuerung\ kein\ \n\ gemeinsam\ genutzer\ Zufallsgenerator\ verwendet\ wird.\n
+numComments=4

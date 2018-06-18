@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Kreispumpe
+comment0.text=\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Kreispumpe.\n\ \n\ @author\ (Ihr\ Name)\ \n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\n
+comment1.params=anzahlSchaufeln\ maximaleDrehzahl\ bezeichnung\ maximalerBetriebsdruck\ maximaleFoerdermenge\ tiefe\ hoehe\ breite\ gewicht
+comment1.target=Kreispumpe(int,\ int,\ java.lang.String,\ float,\ int,\ int,\ int,\ int,\ int)
+comment2.params=
+comment2.target=void\ infoAusgeben()
+numComments=3

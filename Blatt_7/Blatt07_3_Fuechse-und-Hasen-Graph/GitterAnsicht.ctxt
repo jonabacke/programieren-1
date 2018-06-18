@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=GitterAnsicht
+comment0.text=\n\ Die\ Ansicht\ zeigt\ f\u00FCr\ jede\ Position\ ein\ gef\u00E4rbtes\ Rechteck,\n\ das\ den\ jeweiligen\ Inhalt\ repr\u00E4sentiert.\n\ Die\ Farben\ f\u00FCr\ die\ verschiedenen\ Tierarten\ k\u00F6nnen\ mit\n\ der\ Methode\ setzeFarbe\ definiert\ werden.\n\ \n\ @author\ Michael\ K\u00F6lling\ und\ David\ J.\ Barnes\n\ @version\ 2016.03.18\n
+comment1.params=hoehe\ breite
+comment1.target=GitterAnsicht(int,\ int)
+comment1.text=\n\ Erzeuge\ eine\ Ansicht\ mit\ der\ gegebenen\ Breite\ und\ H\u00F6he.\n\ @param\ hoehe\ \ \ die\ H\u00F6he\ der\ Simulation\n\ @param\ breite\ \ die\ Breite\ der\ Simulation\n
+comment2.params=tierklasse\ farbe
+comment2.target=void\ setzeFarbe(java.lang.Class,\ java.awt.Color)
+comment2.text=\n\ Definiere\ eine\ Farbe\ f\u00FCr\ die\ gegebene\ Tierklasse.\n\ @param\ tierklasse\ \ das\ Klassenobjekt\ der\ Tierklasse\n\ @param\ farbe\ \ \ \ \ \ \ die\ zu\ benutzende\ Farbe\ f\u00FCr\ die\ Tierklasse\n
+comment3.params=tierklasse
+comment3.target=java.awt.Color\ gibFarbe(java.lang.Class)
+comment3.text=\n\ @return\ \ die\ definierte\ Farbe\ f\u00FCr\ die\ gegebene\ Tierklasse\n
+comment4.params=schritt\ feld
+comment4.target=void\ zeigeStatus(int,\ Feld)
+comment4.text=\n\ Zeige\ den\ aktuellen\ Zustand\ des\ Feldes.\n\ @param\ schritt\ \ welcher\ Iterationsschritt\ ist\ dies?\n\ @param\ feld\ \ \ \ \ das\ Feld,\ das\ angezeigt\ werden\ soll\n
+comment5.params=feld
+comment5.target=boolean\ istAktiv(Feld)
+comment5.text=\n\ Entscheide,\ ob\ die\ Simulation\ weiterlaufen\ soll.\n\ @return\ true\ \ wenn\ noch\ mehr\ als\ eine\ Spezies\ lebendig\ ist\n
+comment6.params=
+comment6.target=void\ zuruecksetzen()
+comment6.text=\n\ Bereite\ einen\ neuen\ Lauf\ vor.\n
+numComments=7

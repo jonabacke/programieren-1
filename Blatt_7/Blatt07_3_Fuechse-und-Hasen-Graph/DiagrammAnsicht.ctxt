@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=DiagrammAnsicht
+comment0.text=\n\ Die\ Ansicht\ zeigt\ die\ Entwicklung\ zweier\ Populationen\ als\ Liniengraph\ \u00FCber\ die\ Zeit.\n\ Die\ aktuelle\ Version\ stellt\ immer\ genau\ zwei\ unterschiedliche\ Tierklassen\ dar.\ Falls\ weitere\n\ Tiere\ eingef\u00FChrt\ werden,\ werden\ diese\ nicht\ automatisch\ ber\u00FCcksichtigt.\n\ \n\ @author\ Michael\ K\u00F6lling\ und\ David\ J.\ Barnes\n\ @version\ 2016.03.18\n
+comment1.params=breite\ hoehe\ startMax
+comment1.target=DiagrammAnsicht(int,\ int,\ int)
+comment1.text=\n\ Konstruktor.\n\ \n\ @param\ breite\ \ \ \ die\ Breite\ des\ Plotterfensters(in\ Pixel)\n\ @param\ hoehe\ \ \ \ \ die\ H\u00F6he\ des\ Plotterfensters(in\ Pixel)\n\ @param\ startMax\ \ der\ anf\u00E4ngliche\ Maximalwert\ f\u00FCr\ die\ y-Achse\n
+comment2.params=tierklasse\ farbe
+comment2.target=void\ setzeFarbe(java.lang.Class,\ java.awt.Color)
+comment2.text=\n\ Definiere\ eine\ Farbe\ f\u00FCr\ die\ gegebene\ Tierklasse.\n\ @param\ tierklasse\ \ das\ Klassenobjekt\ der\ Tierklasse\n\ @param\ farbe\ \ \ \ \ \ \ die\ zu\ benutzende\ Farbe\ f\u00FCr\ die\ Tierklasse\n
+comment3.params=schritt\ feld
+comment3.target=void\ zeigeStatus(int,\ Feld)
+comment3.text=\n\ Zeige\ den\ aktuellen\ Zustand\ des\ Feldes.\ Der\ Status\ wird\ durch\ einen\ Liniengraphen\ f\u00FCr\ \n\ zwei\ Klassen\ im\ Feld\ dargestellt.\ Diese\ Ansicht\ funktioniert\ auf\ dem\ aktuellen\ Stand\ nur\ f\u00FCr\n\ genau\ zwei\ Klassen\ (nicht\ mehr\ und\ nicht\ weniger).\ Wenn\ das\ Feld\ mehr\ als\ zwei\ unterschiedliche\n\ Tierspezies\ enth\u00E4lt,\ werden\ dennoch\ nur\ zwei\ Klassen\ dargestellt.\n\ \n\ @param\ schritt\ \ welcher\ Iterationsschritt\ ist\ dies?\n\ @param\ feld\ \ \ \ \ das\ Feld,\ das\ angezeigt\ werden\ soll\n
+comment4.params=feld
+comment4.target=boolean\ istAktiv(Feld)
+comment4.text=\n\ Entscheide,\ ob\ die\ Simulation\ weiterlaufen\ soll.\n\ @return\ true\ \ wenn\ noch\ mehr\ als\ eine\ Spezies\ lebendig\ ist\n
+comment5.params=
+comment5.target=void\ zuruecksetzen()
+comment5.text=\n\ Bereite\ einen\ neuen\ Lauf\ vor.\n
+comment6.params=breite\ hoehe\ startMax
+comment6.target=javax.swing.JFrame\ erzeugeFenster(int,\ int,\ int)
+comment6.text=\n\ Bereite\ das\ Fenster\ f\u00FCr\ die\ Darstellung\ des\ Graphen\ vor.\n
+numComments=7
