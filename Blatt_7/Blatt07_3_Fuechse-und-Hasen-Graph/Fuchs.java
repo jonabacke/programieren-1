@@ -27,9 +27,6 @@ public class Fuchs extends Tier
     private static final int HASEN_NAEHRWERT = 9;
     // Ein gemeinsamer Zufallsgenerator, der die Geburten steuert.
     private static final Random rand = Zufallssteuerung.gibZufallsgenerator();
-    
-    // Individuelle Eigenschaften (Instanzfelder).
-
     // Der Futter-Level, der durch das Fressen von Hasen erhöht wird.
     private int futterLevel;
 

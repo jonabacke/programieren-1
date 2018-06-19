@@ -22,11 +22,6 @@ public class Hase extends Tier
     private static final int MAX_WURFGROESSE = 4;
     // Ein gemeinsamer Zufallsgenerator, der die Geburten steuert.
     private static final Random rand = Zufallssteuerung.gibZufallsgenerator();
-    
-    // Individuelle Eigenschaften eines Hasen (Instanzfelder).
-    
-    // Ist dieser Hase noch lebendig?
-
     /**
      * Erzeuge einen neuen Hasen. Ein neuer Hase kann das Alter 0 
      *(neugeboren) oder ein zufälliges Alter haben.

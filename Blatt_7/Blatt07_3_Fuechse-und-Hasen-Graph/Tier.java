@@ -16,9 +16,9 @@ public abstract class Tier
     private Feld feld;
     // Die Position dieses Tieres.
     private Position position;
-    
+    // Alter des Tiers
     private int _alter;
-    
+    // Ein gemeinsamer Zufallsgenerator, der die Geburten steuert.    
     private static final Random rand = Zufallssteuerung.gibZufallsgenerator();
 
     /**
@@ -34,18 +34,22 @@ public abstract class Tier
         setzePosition(position);
         this._alter = 0;
     }
-   /**
+    
+    /**
     * gibt die Gebaerwahrscheinlichkeit
     */
     abstract protected double gibGebaerwahrscheinlichkeit();
+    
     /**
      * gibt die Wurfgroesse
      */
     abstract protected int gibMaxWurfgroesse();
+    
     /**
      * gibt das maximalalter
      */
     abstract protected int gibMaxAlter();
+    
     /**
      * gibt das Gebaeralter
      */
